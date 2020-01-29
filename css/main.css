@@ -1,0 +1,67 @@
+#services{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.sect1, .sect2, .sect3, .textp{
+
+    background-color: #9698a3;
+}
+.sect1 h3, .sect2 h3, .sect3 h3, .team1 h3, .team2 h3, .team3 h3{
+    text-align: center;
+    color: blueviolet;
+    font-size: 1.3rem;
+    font-family: fantasy;
+}
+.sect1 p, .sect2 p, .sect3 p, .team1 p, .team2 p, .team3 p{
+    text-align: center;
+    color: rgb(252, 252, 252);
+    padding: 10px;
+}
+.sect1 figure, .sect2 figure, .sect3 figure, .team1 figure, .team2 figure, .team3 figure{
+    text-align: center;
+}
+#team{
+    background-color:#9698a3;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+#portfolio{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+}
+.imgp img{
+    max-width: 100%;
+}
+.textp{
+    padding:20px;
+    color: rgb(252, 252, 252);
+    font-size: 1.2rem;
+    text-align: justify;
+}
+#contact{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+}
+h2{
+    text-align: center;
+    color: blueviolet;
+    font-family: fantasy;
+}
+.formu
+{
+    background-color: #9698a3;
+    color: rgb(252, 252, 252); 
+    padding: 10px;
+    font-family: sans-serif;
+}
+.bout{
+    text-align: right;
+}

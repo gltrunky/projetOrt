@@ -1,0 +1,13 @@
+footer{
+    background-color: darkgray;
+    color:rgb(252, 252, 252); 
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+footer h5{
+    color:blueviolet;
+    font-family: fantasy;
+}
+footer a{
+    text-decoration: none!important;
+}

@@ -1,0 +1,8 @@
+@media (max-width: 992px) {
+#services, #team, #portfolio, #contact{
+    grid-template-columns: repeat(1, 1fr);
+}
+iframe{
+    height: 400px;
+}
+}
