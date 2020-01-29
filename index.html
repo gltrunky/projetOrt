@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font awsome-->
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Mon Css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="/assets/rubik.png">
+    <title>Mise En Forme</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- En tete -->
+<header id="entete">
+  <!-- Menu -->
+  <div class="navi">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img src="/assets/house.png"></a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Footer</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!-- Carroussel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/carrou1.jpg" class="d-block w-100" alt="Carroussel1">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/carrou2.jpg" class="d-block w-100" alt="Carroussel2">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/carrou3.jpg" class="d-block w-100" alt="Carroussel3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+    <!-- Fin en-tete -->
+
+    <!-- Corp de page -->
+    <main>
+      <!-- Services -->
+      <div id="services">
+        <div class="sect1">
+          <figure><img src="/assets/service1.png" alt="image service un"></figure>
+          <h3>Un</h3>
+          <p>Lorem ipsum dolor sit amet<br>Lorem, ipsum dolor</p>
+        </div>
+        <div class="sect2"><figure><img src="/assets/service2.png" alt="image service deux"></figure>
+          <h3>Deux</h3>
+          <p>Lorem ipsum dolor sit amet<br>Lorem, ipsum dolor</p></div>
+        <div class="sect3"><figure><img src="/assets/service3.png" alt="image service trois"></figure>
+          <h3>Trois</h3>
+          <p>Lorem ipsum dolor sit amet<br>Lorem, ipsum dolor</p>
+          </div>
+      </div>
+      <!-- Team -->
+      <div id="team">
+        <div class="team1"><figure><img src="/assets/Alex.png" alt="Alex" srcset=""></figure>
+        <h3>Alex</h3>
+          <p>Lorem ipsum dolor sit amet<br>Lorem, ipsum dolor</p>
+      </div>
+      <div class="team2"><figure><img src="/assets/Vlad.png" alt="Vlad" srcset=""></figure>
+        <h3>Vladimir</h3>
+          <p>Lorem ipsum dolor sit amet<br>Lorem, ipsum dolor</p>
+      </div>
+      <div class="team3"><figure><img src="/assets/Olga.png" alt="Olga" srcset=""></figure>
+        <h3>Olga</h3>
+          <p>Lorem ipsum dolor sit amet<br>Lorem, ipsum dolor</p>
+      </div></div>
+      <!-- Portfolio -->
+      <div id="portfolio">
+        <div class="textp"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, beatae asperiores quidem quibusdam sed consectetur eius natus pariatur blanditiis necessitatibus rem commodi porro neque dolore animi voluptate magnam mollitia dolores. Ab veniam distinctio quod placeat, odio molestias reiciendis assumenda quia eos nobis ipsum voluptas temporibus veritatis quidem itaque, repellendus neque!</p></div>
+        <div class="imgp"><img src="/assets/portfolio.jpg" alt="image portfolio" srcset=""></div>
+      </div>
+      <div id="contact">
+        <!-- Carte google -->
+        <div class="carte"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.9472261923!2d2.277020514532063!3d48.858837739530934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1579548796859!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        <!-- Formulaire -->
+        <div class="formu">
+          <h2>Nous contacter !</h2>
+          <form method="POST">
+            <!-- civilité -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Mr</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Mme</label>
+              </div>
+              <!-- Coordonées -->
+              <div class="row">
+                <div class="col">
+                  <label for="name">Nom</label>
+                  <input id="name" type="text" class="form-control" placeholder="Votre nom">
+                </div>
+                <div class="col">
+                  <label for="lastname">Prénom</label>
+                  <input id="lastname" type="text" class="form-control" placeholder="Votre prénom">
+                </div>
+              </div>
+              <div class="form-group">
+              <label for="mail">Email</label>
+              <input id="mail" class="form-control" type="mail" placeholder="durand@gmail.fr" required>
+            </div>
+            <!-- Message -->
+            <div class="form-group">
+              <label for="msg-sujet">Sujet</label>
+              <select class="form-control" id="msg-sujet">
+                <option>Demande de Rdv</option>
+                <option>Devis</option>
+                <option>Féliciter</option>
+                <option>Réclamation</option>
+                <option>Autres</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <label for="msg">Message</label>
+                <textarea class="form-control" id="msg" rows="3" placeholder="Votre message..."></textarea>
+              </div>
+            <div class="bout">
+            <button class="btn btn-success" type="submit">Envoyer</button>
+            <button class="btn btn-danger"type="reset">Effacer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+      <!-- Fin corp de page -->
+
+      <!-- Footer -->
+<footer id="footer"class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Lien -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, perferendis.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Lien 1-->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Liens 1</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Lien 1</a>
+          </li>
+          <li>
+            <a href="#!">Lien 2</a>
+          </li>
+          <li>
+            <a href="#!">Lien 3</a>
+          </li>
+          <li>
+            <a href="#!">Lien 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Lien 2 -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Liens 2</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Lien 1</a>
+          </li>
+          <li>
+            <a href="#!">Lien 2</a>
+          </li>
+          <li>
+            <a href="#!">Lien 3</a>
+          </li>
+          <li>
+            <a href="#!">Lien 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Lien 3-->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Liens 3</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Lien 1</a>
+          </li>
+          <li>
+            <a href="#!">Lien 2</a>
+          </li>
+          <li>
+            <a href="#!">Lien 3</a>
+          </li>
+          <li>
+            <a href="#!">Lien 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Lien -->
+
+  <hr>
+
+  <!-- newsletter -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">S'inscrire a la newsletter</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Inscrit toi</a>
+    </li>
+  </ul>
+  <hr>
+  <!-- bouttons social -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fa fa-google-plus" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://www.alexandremartin-online.fr/"> alexandremartin-online.fr</a>
+  </div>
+</footer>
+<!-- Fin Footer -->
+</body>
+</html>
