@@ -1,0 +1,45 @@
+/* General */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+/* Container todolist */
+#todolist-container{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+#todolist-container > h1{
+    text-align: center;
+}
+/* Formulaire */
+#form-add-todo{
+    margin: 20px;
+    text-align: center;
+}
+#form-add-todo > input{
+    width: 45vw;
+}
+/* Todolist */
+#todolist{
+    padding: 20px;
+}
+#todolist .todo{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+#todolist .todo [type=checkbox]:checked + label{
+    text-decoration: line-through;
+}
+#todolist .todo:not(:last-child){
+border-bottom: 1px solid black;
+}
+.error{
+    display: none;
+    color: red;
+    text-align: center;
+    font: 0.6rem;
+    font-weight: bold;
+}

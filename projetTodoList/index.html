@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projet Todolist</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <section id="todolist-container">
+        <h1>Ma liste de chose a faire</h1>
+        <form name='formule' action="#confirm" method="get" id="form-add-todo">
+            <input name="todoTxt" type="text" placeholder="Tache a faire">
+            <button type="submit">Ajouter</button>
+        </form>
+        <div id="todolist"></div>
+        <div class="error">Il y a quelque choses qui ne va pas.</div>
+    </section>
+    <script src="/js/app.js"></script>
+</body>
+</html>
