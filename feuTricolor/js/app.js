@@ -7,7 +7,7 @@ let buttonRed = document.querySelector('#btrouge');
 let buttonOrange  = document.querySelector('#btorange');
 let buttonGreen = document.querySelector('#btvert');
 let buttonStop = document.querySelector('#stop');
-let buttonPanne = document.querySelector('#panne');
+let buttonAppel = document.querySelector('#appel');
 let i=0;
 let s;
 let color=[["green","grey","grey"],
@@ -25,7 +25,7 @@ function start()
         {
             i=0;
         }
-        s=setTimeout(start,1500);
+        s=setTimeout(start,2500);
 }
 
 //FONCTION ARRET FEU AUTOMATIQUE
@@ -37,6 +37,18 @@ function stop()
         feuRouge.style.backgroundColor="gray";
         feuOrange.style.backgroundColor="gray";
         feuVert.style.backgroundColor="gray";
+}
+
+function appel(){
+    feuRouge.style.backgroundColor=color[i][2];
+    feuOrange.style.backgroundColor=color[i][1];
+    feuVert.style.backgroundColor=color[i][0];
+    i+=1;
+        if(i==3)
+        {
+            clearTimeout();
+        }
+        s=setTimeout(appel,1500);
 }
 
 //FONCTION TEST FEU ROUGE,ORANGE,VERT
@@ -73,7 +85,8 @@ function colorTemp(ColorTest, time)
 }
 
 
-buttonAuto.addEventListener('click', function() {start()});
+buttonAppel.addEventListener('click', function(){appel()});
+buttonAuto.addEventListener('click', function() {stop(),start()});
 buttonStop.addEventListener('click', function(){stop()})
 buttonRed.addEventListener('click', function() {colorTemp('red', 1500)});
 buttonOrange.addEventListener('click', function() {colorTemp('orange', 1500)});
