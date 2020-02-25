@@ -32,6 +32,7 @@ $texteDuBoutton="Page 2";
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
+    <link rel="stylesheet" href="./components/css/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -51,7 +52,6 @@ $texteDuBoutton="Page 2";
   </head>
 
   <body>
-    <h1><strong>Page Accueil</strong></h1>
     <div class="col">
       <div class="row justify-content-between" id="logoConnexion">
         <div class="connexion" id="connect">
@@ -62,23 +62,47 @@ $texteDuBoutton="Page 2";
           >
           <i class="fa fa-fighter-jet" aria-hidden="true"></i>&nbsp;<?php echo $texteDuBoutton;?>
           </button>
-          </a>
-        </div>
+        </a>
       </div>
     </div>
+  </div>
+    <h1><strong>Accueil</strong></h1>
+    <div class="container">
+    <!-- Formulaire d'Authentification -->
+    <form method="POST" action="./auth/authentification.php " class="form-signin">
+  <h2 class="h3 mb-3 font-weight-normal">Inscription</h2>
+  <div class="row">
+  <div class="col-6">
+  <label for="inputEmail" class="sr-only">adresse Email</label>
+  <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Adresse email" autofocus="">
+  </div>
+  <div class="col-6">
+  <label for="inputPassword" class="sr-only">Mot de passe</label>
+  <input type="password" id="inputPassword" class="form-control" name="motdepasse" placeholder="Mot de passe">
+  </div>
+  </div>
+  <div class="checkbox mb-3 text-right">
+    <label>
+      <input type="checkbox" value="remember-me"> Se souvenir de moi
+    </label>
+  </div>
+            <div class="bouttonconnexion">
+  <button class="btn btn-lg btn-primary btn-block col-3" type="submit" name="connexion">Connexion</button>
+  </div>
+</form>
      <!-- Formulaire -->
-     <h2>Formulaire</h2>
-    <form method="POST" action="./page2.php?texteDuBoutton=retour">
+     <form class="formu2" method="POST" action="./page2.php?texteDuBoutton=retour">
+     <h2 class="h3 mb-3 font-weight-normal">Formulaire</h2>
               <div class="row">
-                <div class="col">
+                <div class="col-4">
                   <label for="name">Nom</label>
                   <input id="name" type="text" class="form-control" name="nom" placeholder="Votre nom"required>
                 </div>
-                <div class="col">
+                <div class="col-4">
                   <label for="lastname">Prénom</label>
                   <input id="lastname" type="text" class="form-control" name="prenom" placeholder="Votre prénom"required>
                 </div>
-                  <div class="col">
+                  <div class="col-4">
                   <label for="age">Age</label>
                   <input id="age" class="form-control" type="number" name="age" placeholder="Votre age" required>
                 </div>
@@ -88,6 +112,7 @@ $texteDuBoutton="Page 2";
             <button class="btn btn-danger"type="reset">Effacer</button>
             </div>
           </form>
+          </div>
   </body>
 </html>
 <?php 

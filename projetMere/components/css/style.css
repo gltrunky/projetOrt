@@ -1,0 +1,19 @@
+body {
+  background-color: aqua;
+}
+h1 {
+  text-align: center;
+  color: brown;
+}
+.form-signin,
+.formu2 {
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 30px;
+}
+.bouttonconnexion,
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
