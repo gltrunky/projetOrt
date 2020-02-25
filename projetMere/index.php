@@ -72,11 +72,11 @@ $texteDuBoutton="Page 2";
               <div class="row">
                 <div class="col">
                   <label for="name">Nom</label>
-                  <input id="name" type="text" class="form-control" name="nom" placeholder="Votre nom">
+                  <input id="name" type="text" class="form-control" name="nom" placeholder="Votre nom"required>
                 </div>
                 <div class="col">
                   <label for="lastname">Prénom</label>
-                  <input id="lastname" type="text" class="form-control" name="prenom" placeholder="Votre prénom">
+                  <input id="lastname" type="text" class="form-control" name="prenom" placeholder="Votre prénom"required>
                 </div>
                   <div class="col">
                   <label for="age">Age</label>
