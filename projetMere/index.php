@@ -83,7 +83,7 @@ $texteDuBoutton="Page 2";
                   <input id="age" class="form-control" type="number" name="age" placeholder="Votre age" required>
                 </div>
               </div>
-            <div>
+            <div class="button">
             <button class="btn btn-success" type="submit" name="envoie">Envoyer</button>
             <button class="btn btn-danger"type="reset">Effacer</button>
             </div>
