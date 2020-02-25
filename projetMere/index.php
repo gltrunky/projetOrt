@@ -46,26 +46,29 @@ $texteDuBoutton="Page 2";
     <!-- Container du site -->
     <div class="container">
     <!-- Formulaire d'inscription -->
-    <form method="POST" action="./auth/authentification.php " class="form-signin">
-  <h2 class="h3 mb-3 font-weight-normal">Inscription</h2>
-  <div class="checkbox mb-3 text-center">
+    <form method="POST" action="./auth/authentification.php " class="form-signin col-3 mr-auto ml-auto">
+    <h2 class="h3 mb-3 font-weight-normal text-center">Inscription</h2>
+    <figure class="text-center">
+    <img class="mb-4" src="./img/avatar.jpg" alt="logo de Trunky" width="72" height="72">
+</figure>
+  <div class="col-">
+    <label for="inputEmail" class="sr-only">adresse Email</label>
+    <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Adresse email" autofocus="">
+  </div>
+  <div class="col-">
+    <label for="inputPassword" class="sr-only">Mot de passe</label>
+    <input type="password" id="inputPassword" class="form-control" name="motdepasse" placeholder="Mot de passe">
+  </div>
+  <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Se souvenir de moi
     </label>
   </div>
-  <div class="col-5 mr-auto ml-auto">
-  <label for="inputEmail" class="sr-only">adresse Email</label>
-  <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Adresse email" autofocus="">
-  </div>
-  <div class="col-5 mr-auto ml-auto">
-  <label for="inputPassword" class="sr-only">Mot de passe</label>
-  <input type="password" id="inputPassword" class="form-control" name="motdepasse" placeholder="Mot de passe">
-  </div>
   <div class="bouttonconnexion">
-    <button class="btn btn-lg btn-primary btn-block col-3" type="submit" name="connexion">Connexion</button>
+    <button class="btn btn-lg btn-primary btn-block col-" type="submit" name="connexion">Connexion</button>
   </div>
 </form>
-     <!-- Formulaire -->
+     <!-- Formulaire -->  
      <form class="formu2" method="POST" action="./page2.php?texteDuBoutton=retour">
      <h2 class="h3 mb-3 font-weight-normal">Formulaire</h2>
               <div class="row">
@@ -82,7 +85,7 @@ $texteDuBoutton="Page 2";
                   <input id="age" class="form-control" type="number" name="age" placeholder="Votre age" required>
                 </div>
               </div>
-            <div class="button">
+            <div class="btn-form2">
             <button class="btn btn-success" type="submit" name="envoie">Envoyer</button>
             <button class="btn btn-danger"type="reset">Effacer</button>
             </div>

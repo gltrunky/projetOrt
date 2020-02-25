@@ -1,18 +1,31 @@
+:root {
+  --primary-color: #4267b2;
+  --secondary-color: #29487d;
+  --titre-Color: #000000;
+  --texte-color: #fff;
+}
+
 body {
-  background-color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-color);
 }
 h1 {
   text-align: center;
-  color: brown;
+  color: var(--titre-Color);
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+  color: var(--texte-color);
+  font-weight: bold;
 }
 .form-signin,
 .formu2 {
-  border: 1px solid black;
+  border: 1px solid var(--texte-color);
   padding: 5px;
   margin-top: 30px;
 }
-.bouttonconnexion,
-.button {
-  display: flex;
-  justify-content: center;
+.btn-form2 {
+  margin-top: 10px;
+  text-align: right;
 }
